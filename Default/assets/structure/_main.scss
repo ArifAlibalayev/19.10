@@ -1,0 +1,62 @@
+.MainContent{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+    .newswrapper{
+        max-width:1200px ;
+        min-height: 80vh;
+        margin-top: 60px;
+        position: relative;
+        margin-bottom: 60px;
+        
+        }
+            .card{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-wrap: wrap;
+                max-width: 600px;
+                min-height: 20vh;
+                border-bottom: 2px solid grey;
+                padding: 20px;
+            }
+
+                .card h1{
+                    font-size: 36px;
+                    font-weight: 900;
+                }
+
+                .card p{
+                    font-size: 24px;
+                }
+
+                .card b{
+                    font-size:20px;
+                    font-weight: 200;
+                }
+        .learnmore{
+            background-color: #0085A1;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            cursor: pointer;
+                &:hover{
+                    background-color: #036c81;
+                }
+        }       
+}
+    
+@media screen and (max-width:600px){
+    .newswrapper{
+        background-color: #036c81;
+    }
+}
